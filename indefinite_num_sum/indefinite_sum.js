@@ -4,7 +4,11 @@ const indefiniteObj = {
         for (var i=0; i < arguments.length; i++) {
             s += arguments[i];
         }
-        return s;
+            if(typeof s !== 'number'){
+                return 'please ensure all parameter\'s are numbers';
+            }else{
+                return s;
+            }
         }
 }
 
