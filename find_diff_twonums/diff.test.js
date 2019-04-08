@@ -6,7 +6,7 @@ describe('returns the difference between two numbers', function(){
   });  
 
   it('all paramaters passed in must be numbers',function(){
-    expect(subTwo.diff('2')).toBe('you must pass in two parameters');
+    expect(subTwo.diff('2')).toBe("all parameter's must be numbers");
   });
 });
 
