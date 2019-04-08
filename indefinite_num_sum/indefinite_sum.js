@@ -5,12 +5,13 @@ const indefiniteObj = {
             s += arguments[i];
         }
             if(typeof s !== 'number'){
+                console.log(s);
                 return 'please ensure all parameter\'s are numbers';
             }else{
+                console.log(s);
                 return s;
             }
         }
 }
 
-console.log(indefiniteObj.sumEveryThing(1,2,3,4));
 module.exports = indefiniteObj;
