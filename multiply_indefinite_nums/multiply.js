@@ -5,6 +5,9 @@ const multiplyObj = {
             storage *= arguments[i];
         }
 
+        if(isNaN(storage)){
+            return 'please ensure all arguments passed in are numbers';
+        }
         return storage;
     }
 }

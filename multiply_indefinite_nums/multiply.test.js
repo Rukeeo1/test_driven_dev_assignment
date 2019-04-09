@@ -7,6 +7,10 @@ describe('multiply an indefinite number of elements',function(){
     });
 
     it("should contain only numbers", function(){
-        expect(multiply.multiply(2,2,3,'s')).toBe('please ensure all parameters are numbers');
+        expect(multiply.multiply(2,2,3,'s')).toEqual('please ensure all arguments passed in are numbers');
+        expect(multiply.multiply(2,2,2,{})).toBe('please ensure all arguments passed in are numbers');
     });
+
+    
+
 });
