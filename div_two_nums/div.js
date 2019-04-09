@@ -4,8 +4,16 @@ const divObj = {
         if(typeof a !== 'number' || typeof b !== 'number'){
             return 'please ensure both parameters are numbers';
         }
-        
-        return a/b;
+
+        let c = a/b;
+
+        if(Number.isInteger(c)){
+            console.log(c)
+            return c;
+        }else{
+            console.log(c.toFixed(2))
+            return Number(c.toFixed(2));
+        }
     }
 }
 
