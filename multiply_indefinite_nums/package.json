@@ -1,0 +1,14 @@
+{
+  "name": "multiply_indefinite_nums",
+  "version": "1.0.0",
+  "description": "",
+  "main": "multiply.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
