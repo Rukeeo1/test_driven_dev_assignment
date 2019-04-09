@@ -6,12 +6,14 @@ const multiplyObj = {
         }
 
         if(isNaN(storage)){
+            console.log(storage)
             return 'please ensure all arguments passed in are numbers';
         }
+        console.log(storage);
         return storage;
     }
 }
 
-console.log(multiplyObj.multiply(2,2,3,'s'));
+// console.log(multiplyObj.multiply(4,0.5,0.32));
 
 module.exports = multiplyObj;

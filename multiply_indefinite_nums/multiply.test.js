@@ -11,6 +11,10 @@ describe('multiply an indefinite number of elements',function(){
         expect(multiply.multiply(2,2,2,{})).toBe('please ensure all arguments passed in are numbers');
     });
 
+    it("should handle floating point numbers well", function(){
+        expect(multiply.multiply(2,0.4,0.2,0.1,0.4)).toEqual(0.0064);
+    });
+
     
 
 });
