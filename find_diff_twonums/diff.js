@@ -6,8 +6,14 @@ const diffObj = {
         }
         let x = a - b;
         console.log(x)
-        return x;
+        if(Number.isInteger(x)){
+            return x;
+        }else{
+            return Number(x.toFixed(2));
+        }
     }
 }
+
+console.log(diffObj.diff(2,2.4))
 
 module.exports = diffObj;

@@ -8,6 +8,10 @@ describe('returns the difference between two numbers', function(){
   it('all paramaters passed in must be numbers',function(){
     expect(subTwo.diff('2')).toBe("all parameter's must be numbers");
   });
+
+  it('should work well with decimal numbers to 2 decimal places', function(){
+    expect(subTwo.diff(0.3,0.1)).toBe(0.2);
+  });
 });
 
 //string like numbers can be converted to numbers...
