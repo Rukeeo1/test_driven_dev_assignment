@@ -1,7 +1,7 @@
 //Takes two numbers as argument and return the difference between the numbers
 const diffObj = {
     diff: function(a,b){
-        if(typeof a !== 'number' && typeof b !== 'number'){
+        if(typeof a !== 'number' || typeof b !== 'number'){
             return 'all parameter\'s must be numbers'
         }
         let x = a - b;
@@ -14,6 +14,6 @@ const diffObj = {
     }
 }
 
-console.log(diffObj.diff(2,2.4))
+console.log(diffObj.diff(2,{}));
 
 module.exports = diffObj;
