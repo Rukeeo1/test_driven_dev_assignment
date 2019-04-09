@@ -1,0 +1,14 @@
+{
+  "name": "div_two_nums",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "rukee ojigbo",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
