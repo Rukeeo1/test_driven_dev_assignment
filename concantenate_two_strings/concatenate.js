@@ -3,6 +3,10 @@ const addTwoStrings = {
         if(typeof a !== 'string' || typeof b !== 'string'){
             return 'all parameters must be string';
         }
+
+        if(a == '' || b == ''){
+            return 'strings can\'t be empty';
+        }
         console.log(a+b);
         return a + b;
     }

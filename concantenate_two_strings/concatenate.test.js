@@ -9,5 +9,11 @@ describe('should concatenate two strings', function(){
         expect(strConcat.concat('rukee', {})).toBe('all parameters must be string');
         expect(strConcat.concat('rukee', [])).toBe('all parameters must be string');
         expect(strConcat.concat(2,'hello')).toBe('all parameters must be string');
+        expect(strConcat.concat('','')).toBe('strings can\'t be empty');
+        expect(strConcat.concat(true,false)).toBe('all parameters must be string');
+        //strings might not be empty but might contain only white space...
+        expect(strConcat.concat({},[])).toBe('all parameters must be string');
+        expect(strConcat.concat(null,undefined)).toBe('all parameters must be string');
+        expect(strConcat.concat('0.2','undefined')).toBe('0.2undefined');
     });
 });
