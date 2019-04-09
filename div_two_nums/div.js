@@ -17,6 +17,6 @@ const divObj = {
     }
 }
 
-console.log(divObj.div(4,3));
+console.log(divObj.div(4,03));
 
 module.exports = divObj;
