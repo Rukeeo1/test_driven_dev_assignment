@@ -1,0 +1,23 @@
+{
+  "name": "austin_tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rukeeo1/test_driven_dev_assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rukeeo1/test_driven_dev_assignment/issues"
+  },
+  "homepage": "https://github.com/Rukeeo1/test_driven_dev_assignment#readme",
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
