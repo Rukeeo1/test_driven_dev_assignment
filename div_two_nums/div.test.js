@@ -14,6 +14,19 @@ describe('should divide numbers', function(){
     it('should return floating point numbers to 2 decimal places', function(){
         expect(div.div(0.3,0.2)).toBe(1.50);
     });
+
+    it('should return floating point numbers to 2 decimal places', function(){
+        expect(div.div(Infinity,Infinity)).toBe(Infinity);
+    });
+
+    it('should return floating point numbers to 2 decimal places', function(){
+        expect(div.div(null,null)).toBe('please ensure both parameters are numbers');
+    });
+
+    it('should return floating point numbers to 2 decimal places', function(){
+        expect(div.div(true,true)).toBe('please ensure both parameters are numbers');
+    });
+
 });
 
 /*
